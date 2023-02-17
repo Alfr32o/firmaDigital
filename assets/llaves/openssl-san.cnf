@@ -1,0 +1,25 @@
+[ req ]
+default_bits           = 2048
+distinguished_name     = req_distinguished_name
+req_extensions         = req_ext
+
+[ req_distinguished_name ]
+countryName            = MX
+stateOrProvinceName    = Queretaro
+localityName           = San Juan del Rio
+organizationName       = tecnologico
+commonName             = tec
+
+# Optionally, specify some defaults.
+countryName_default            = MX
+stateOrProvinceName_default    = Queretaro
+localityName_default           = San Juan del Rio
+0.organizationName_default     = tecnologico
+organizationalUnitName_default = tec
+emailAddress_default           = alfredo@gmail.com
+
+[ req_ext ]
+subjectAltName = @alt_names
+
+[alt_names]
+DNS.1   = localhost
